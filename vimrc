@@ -172,8 +172,10 @@ Plugin 'jistr/vim-nerdtree-tabs'
   " Automatically find and select currently opened file in NERDTree.
   let g:nerdtree_tabs_autofind=1
 
+" Fuzzy file, buffer, mru, tag, etc finder.
 Plugin 'kien/ctrlp.vim'
 
+" Lean & mean status/tabline for vim that's light as air.
 Plugin 'bling/vim-airline'
 
   " Automatically displays all buffers when there's only one tab open
@@ -184,6 +186,9 @@ Plugin 'bling/vim-airline'
 
   " Airline colorscheme
   let g:airline_theme = 'understated'
+
+" Add end after if, do, def and several other keywords.
+Plugin 'tpope/vim-endwise'
 
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
