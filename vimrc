@@ -197,6 +197,9 @@ Plugin 'tpope/vim-endwise'
 " A Git wrapper so awesome, it should be illegal.
 Plugin 'tpope/vim-fugitive'
 
+" A vim plugin to display the indention levels with thin vertical lines.
+Plugin 'Yggdroot/indentLine'
+
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
 
