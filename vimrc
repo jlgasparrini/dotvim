@@ -12,7 +12,7 @@
 "    ~>> General settings
 "    ~>> Visual settings
 "    ~>> Shortcuts
-"    ~>> Plugins used
+"    ~>> Plugins
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -61,7 +61,7 @@ syntax enable
 " Show line numbers.
 set number
 
-"Minimal number of screen lines to keep above and below the cursor.
+" Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=5
 
 " Use the appropriate number of spaces to insert a <Tab>.
@@ -140,7 +140,7 @@ imap () ()<Left>
 nnoremap Y y$
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  ~>> Plugins Used
+"  ~>> Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the runtime path to include Vundle.
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -151,5 +151,23 @@ call vundle#begin()
 " Let Vundle manage Vundle, required  by Vundle.
 Plugin 'gmarik/Vundle.vim'
 
-" All of your Plugins must be added before the following line. Required by Vundle
+" The NERD tree allows you to explore your filesystem and to open files and directories.
+Plugin 'scrooloose/nerdtree.git'
+
+" NERDTree and tabs together in Vim, painlessly.
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" Open NERDTree on console vim startup.
+let g:nerdtree_tabs_open_on_console_startup=1
+
+" When switching into a tab, make sure that focus is on the file window, not in the NERDTree window.
+let g:nerdtree_tabs_focus_on_files=1
+
+" Automatically find and select currently opened file in NERDTree.
+let g:nerdtree_tabs_autofind=1
+
+" All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
+
+" Because Vundle required filetype off.
+filetype plugin indent on
