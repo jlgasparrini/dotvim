@@ -160,16 +160,28 @@ Plugin 'scrooloose/nerdtree.git'
 " NERDTree and tabs together in Vim, painlessly.
 Plugin 'jistr/vim-nerdtree-tabs'
 
-" Open NERDTree on console vim startup.
-let g:nerdtree_tabs_open_on_console_startup=1
+  " Open NERDTree on console vim startup.
+  let g:nerdtree_tabs_open_on_console_startup=1
 
-" When switching into a tab, make sure that focus is on the file window, not in the NERDTree window.
-let g:nerdtree_tabs_focus_on_files=1
+  " When switching into a tab, make sure that focus is on the file window, not in the NERDTree window.
+  let g:nerdtree_tabs_focus_on_files=1
 
-" Automatically find and select currently opened file in NERDTree.
-let g:nerdtree_tabs_autofind=1
+  " Automatically find and select currently opened file in NERDTree.
+  let g:nerdtree_tabs_autofind=1
 
 Plugin 'kien/ctrlp.vim'
+
+Plugin 'bling/vim-airline'
+
+  " Automatically displays all buffers when there's only one tab open
+  let g:airline#extensions#tabline#enabled = 1
+
+  " Enable powerline fonts
+  let g:airline_powerline_fonts = 1
+
+  " Airline colorscheme
+  let g:airline_theme = 'understated'
+
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
 
