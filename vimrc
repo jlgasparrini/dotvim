@@ -54,6 +54,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Disable swap files
 set noswapfile
 
+" Which will place yanked text into the global clipboard, and allow you to
+" paste from the global clipboard.
+set clipboard=unannamedplus
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Visual settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
