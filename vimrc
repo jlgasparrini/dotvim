@@ -12,6 +12,7 @@
 "    ~>> General settings
 "    ~>> Visual settings
 "    ~>> Shortcuts
+"    ~>> Plugins used
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -38,13 +39,13 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
-" When searching ignore case sensitive,
+" When searching ignore case sensitive.
 set ignorecase
 
 " Highlight search results.
 set hlsearch
 
-" Incremental search, makes search act like search in modern browsers
+" Incremental search, makes search act like search in modern browsers.
 set incsearch
 
 " Vim will automatically remove all trailing whitespace before saving.
@@ -54,14 +55,14 @@ autocmd BufWritePre * :%s/\s\+$//e
 "  ~>> Visual settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Enable syntax processing
+" Enable syntax processing.
 syntax enable
 
-" Show line numbers
+" Show line numbers.
 set number
 
-" Set 5 lines to the cursor - when moving vertically using j/k.
-set so=5
+"Minimal number of screen lines to keep above and below the cursor.
+set scrolloff=5
 
 " Use the appropriate number of spaces to insert a <Tab>.
 set expandtab
@@ -75,10 +76,10 @@ set shiftwidth=2
 " Number of spaces that a <Tab> in the file counts for.
 set tabstop=2
 
-" Enable auto indent
+" Enable auto indent.
 set autoindent
 
-" Enable smart indent
+" Enable smart indent.
 set smartindent
 
 " No wrap lines
@@ -137,3 +138,18 @@ imap () ()<Left>
 
 " Copy of the current position to final line
 nnoremap Y y$
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  ~>> Plugins Used
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set the runtime path to include Vundle.
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" Initialize Vundle plugin.
+call vundle#begin()
+
+" Let Vundle manage Vundle, required  by Vundle.
+Plugin 'gmarik/Vundle.vim'
+
+" All of your Plugins must be added before the following line. Required by Vundle
+call vundle#end()
