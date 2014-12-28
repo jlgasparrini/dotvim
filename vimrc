@@ -200,6 +200,9 @@ Plugin 'tpope/vim-fugitive'
 " A vim plugin to display the indention levels with thin vertical lines.
 Plugin 'Yggdroot/indentLine'
 
+" A vim plugin to comment stuff out.
+Plugin 'tpope/vim-commentary'
+
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
 
