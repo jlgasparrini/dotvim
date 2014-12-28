@@ -166,6 +166,7 @@ let g:nerdtree_tabs_focus_on_files=1
 " Automatically find and select currently opened file in NERDTree.
 let g:nerdtree_tabs_autofind=1
 
+Plugin 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
 

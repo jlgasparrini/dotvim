@@ -20,3 +20,4 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [Vundle](https://github.com/gmarik/Vundle.vim) the plug-in manager for Vim
 - [NERDTree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
 - [NERDTree tabs](https://github.com/jistr/vim-nerdtree-tabs) NERDTree and tabs together in Vim, painlessly
+- [CtrlP](https://github.com/kien/ctrlp.vim) NERDTree and tabs together in Vim, painlessly
