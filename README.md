@@ -22,4 +22,5 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [NERDTree tabs](https://github.com/jistr/vim-nerdtree-tabs) NERDTree and tabs together in Vim, painlessly.
 - [CtrlP](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru, tag, etc finder.
 - [Vim airline](https://github.com/bling/vim-airline) Lean & mean status/tabline for vim that's light as air.
-- [Vim endwise](tpope/vim-endwise) Add end after if, do, def and several other keywords.
+- [Vim endwise](https://github.com/tpope/vim-endwise) Add end after if, do, def and several other keywords.
+- [Vim fugitive](https://github.com/tpope/vim-fugitive) A Git wrapper so awesome, it should be illegal.

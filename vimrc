@@ -190,6 +190,9 @@ Plugin 'bling/vim-airline'
 " Add end after if, do, def and several other keywords.
 Plugin 'tpope/vim-endwise'
 
+" A Git wrapper so awesome, it should be illegal.
+Plugin 'tpope/vim-fugitive'
+
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
 
