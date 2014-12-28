@@ -91,6 +91,9 @@ set nowrap
 " Display the status line always
 set laststatus=2
 
+" Select the colorscheme
+colorscheme monokai
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
