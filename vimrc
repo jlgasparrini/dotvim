@@ -51,6 +51,9 @@ set incsearch
 " Vim will automatically remove all trailing whitespace before saving.
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Disable swap files
+set noswapfile
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Visual settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
