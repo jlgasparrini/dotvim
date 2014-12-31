@@ -51,7 +51,7 @@ set incsearch
 " Vim will automatically remove all trailing whitespace before saving.
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Disable swap files
+" Disable swap files.
 set noswapfile
 
 " Which will place yanked text into the global clipboard, and allow you to
@@ -89,65 +89,68 @@ set autoindent
 " Enable smart indent.
 set smartindent
 
-" No wrap lines
+" No wrap lines.
 set nowrap
 
-" Display the status line always
+" Display the status line always.
 set laststatus=2
 
-" Select the colorscheme
+" Select the colorscheme.
 colorscheme monokai
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Fast saved
+" Fast saved.
 nmap <leader>w :wa!<cr>
 
-" Fast tab closed
+" Fast tab closed.
 nmap <leader>q :qa!<cr>
 
-" Fast buffer closed
+" Fast buffer closed.
 map <S-Q> :bd!<cr>
 
-" Clear highligth search
+" Clear highligth search.
 nnoremap <silent> <c-c> :nohl<CR><c-c>
 
-" Smart way to move between windows
+" Smart way to move between windows.
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Smart way to move between tabs
+" Smart way to move between tabs.
 map <S-h> :tabp<cr>
 map <S-l> :tabn<cr>
 
-" Remap | to first non-blank character
+" Remap | to first non-blank character.
 map \| ^
 
 " Fast search with <C-r> in visual mode.
 vnoremap <C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 
-" Keep the cursor in the same place when you join lines with J
+" Keep the cursor in the same place when you join lines with J.
 nnoremap J mzJ`z
 
-" Simplest it don’t do anything
+" Simplest it don’t do anything.
 nnoremap K <nop>
 
-" Insert a new line at the current cursor position
+" Insert a new line at the current cursor position.
 map <S-s> i<cr><esc>
 
-" After close any of this characters insert a space automatically
+" After close any of this characters insert a space automatically.
 imap "" ""<Left>
 imap '' ''<Left>
 imap {} {}<Left>
 imap [] []<Left>
 imap () ()<Left>
 
-" Copy of the current position to final line
+" Copy of the current position to final line.
 nnoremap Y y$
+
+" Reload vimrc file easily.
+map <leader>r :source ~/.vimrc<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Plugins
@@ -182,13 +185,13 @@ Plugin 'kien/ctrlp.vim'
 " Lean & mean status/tabline for vim that's light as air.
 Plugin 'bling/vim-airline'
 
-  " Automatically displays all buffers when there's only one tab open
+  " Automatically displays all buffers when there's only one tab open.
   let g:airline#extensions#tabline#enabled = 1
 
-  " Enable powerline fonts
+  " Enable powerline fonts.
   let g:airline_powerline_fonts = 1
 
-  " Airline colorscheme
+  " Airline colorscheme.
   let g:airline_theme = 'understated'
 
 " Add end after if, do, def and several other keywords.
@@ -202,6 +205,15 @@ Plugin 'Yggdroot/indentLine'
 
 " A vim plugin to comment stuff out.
 Plugin 'tpope/vim-commentary'
+
+" Quoting/parenthesizing made simple.
+Plugin 'tpope/vim-surround'
+
+" Auto-completion for quotes, parens, brackets, etc. in insert mode.
+Plugin 'Raimondi/delimitMate'
+
+" Start a * or # search from a visual block.
+Plugin 'bronson/vim-visual-star-search'
 
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
