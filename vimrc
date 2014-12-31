@@ -150,7 +150,7 @@ imap () ()<Left>
 nnoremap Y y$
 
 " Reload vimrc file easily.
-map <leader>r :source ~/.vimrc<CR>
+map <leader>r :so~/.vim/vimrc<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Plugins
@@ -214,6 +214,13 @@ Plugin 'Raimondi/delimitMate'
 
 " Start a * or # search from a visual block.
 Plugin 'bronson/vim-visual-star-search'
+
+" Manage multiple cursors easily.
+Plugin 'terryma/vim-multiple-cursors'
+
+" This plugin will allow you to run ack from vim, and shows the results in a
+" split window.
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line. Required by Vundle.
 call vundle#end()
