@@ -139,7 +139,7 @@ nnoremap K <nop>
 " Insert a new line at the current cursor position.
 map <S-s> i<cr><esc>
 
-" After close any of this characters insert a space automatically.
+" After close any of this characters go left into them.
 imap "" ""<Left>
 imap '' ''<Left>
 imap {} {}<Left>
@@ -186,13 +186,13 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 
   " Automatically displays all buffers when there's only one tab open.
-  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#enabled=1
 
   " Enable powerline fonts.
-  let g:airline_powerline_fonts = 1
+  let g:airline_powerline_fonts=1
 
   " Airline colorscheme.
-  let g:airline_theme = 'understated'
+  let g:airline_theme='understated'
 
 " Add end after if, do, def and several other keywords.
 Plugin 'tpope/vim-endwise'
