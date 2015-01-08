@@ -35,7 +35,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 - [Learning vim by Ben McCormick](benmccormick.org/learning-vim-in-2014/)
 
-### Ideas & Inspitarion
+### Ideas & Inspiration
 
 - [Janus: Vim distribution](github.com/carlhuda/janus)
 - [An attempt at The Ultimate Vim Configuration](github.com/kensodev)
