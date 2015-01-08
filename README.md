@@ -1,5 +1,5 @@
 #Cool settings for [vim](www.vim.org) ^^
-###*This configuration is focus on support Ruby on Rails applications.*
+###*This configuration is focus on support RoR applications.*
 
 ###How to install
 * 1st. Clone the repository
