@@ -1,20 +1,20 @@
 #Cool settings for [vim](www.vim.org) ^^
-This configuration is focus on support Ruby on Rails applications.
+###*This configuration is focus on support Ruby on Rails applications.*
 
-##How to install
+###How to install
 * 1st. Clone the repository
-```bash
+```zsh
 git clone git@github.com:jlgasparrini/dotvim.git ~/.vim
 ```
 
 * 2nd. Make symbolic link for .vimrc file
-```bash
+```zsh
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
 * 3rd. Enjoy it! :)
 
-##Plugin list
+###Plugin list
 
 - [Vundle](github.com/gmarik/Vundle.vim) The plug-in manager for Vim.
 - [NERDTree](github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
@@ -31,15 +31,15 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [Multiple cursors](github.com/terryma/vim-multiple-cursors) Manage multiple cursors easily.
 - [Ack](mileszs/ack.vim) This plugin will allow you to run ack from vim, and shows the results in a split window.
 
-## Do you are learn vim? helpful links!
+### Do you are learn vim? helpful links!
 
 - [Learning vim by Ben McCormick](benmccormick.org/learning-vim-in-2014/)
 
-##Ideas & Inspitarion
+### Ideas & Inspitarion
 
 - [Janus: Vim distribution](github.com/carlhuda/janus)
 - [An attempt at The Ultimate Vim Configuration](github.com/kensodev)
 
-## Vimrc's file examples
+### Vimrc's file examples
 
-- github.com/benmccormick/dotfiles/blob/master/vim/vimrc.symlink
+- www.github.com/benmccormick/dotfiles/blob/master/vim/vimrc.symlink
