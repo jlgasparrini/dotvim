@@ -98,6 +98,9 @@ set laststatus=2
 " Select the colorscheme.
 colorscheme monokai
 
+" Fix syntax highlightning for markdown files
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -112,7 +115,7 @@ nmap <leader>q :qa!<cr>
 map <S-Q> :bd!<cr>
 
 " Clear highligth search.
-nnoremap <silent> <c-c> :nohl<CR><c-c>
+nnoremap <silent> <c-c> :nohl<cr><c-c>
 
 " Smart way to move between windows.
 map <C-j> <C-W>j
@@ -140,17 +143,21 @@ nnoremap K <nop>
 map <S-s> i<cr><esc>
 
 " After close any of this characters go left into them.
-imap "" ""<Left>
-imap '' ''<Left>
-imap {} {}<Left>
-imap [] []<Left>
-imap () ()<Left>
+imap "" ""<left>
+imap '' ''<left>
+imap {} {}<left>
+imap [] []<left>
+imap () ()<left>
 
 " Copy of the current position to final line.
 nnoremap Y y$
 
 " Reload vimrc file easily.
 map <leader>r :so~/.vim/vimrc<CR>
+
+" Short way to move tabs :)
+map <C-right> :execute "tabmove" tabpagenr() <cr>
+map <C-left> :execute "tabmove" tabpagenr() - 2 <cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Plugins
