@@ -29,7 +29,9 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [DelimitMate](github.com/Raimondi/delimitMate) Provides insert mode auto-completion for quotes, parens, brackets, etc.
 - [Visual star search](github.com/bronson/vim-visual-star-search) Start a * or # search from a visual block.
 - [Multiple cursors](github.com/terryma/vim-multiple-cursors) Manage multiple cursors easily.
-- [Ack](mileszs/ack.vim) This plugin will allow you to run ack from vim, and shows the results in a split window.
+- [Ack](github.com/mileszs/ack.vim) This plugin will allow you to run ack from vim, and shows the results in a split window.
+- [Repeat](github.com/tpope/vim-repeat) Enable repeating supported plugin maps with ".".
+- [speeddating](github.com/tpope/vim-speeddating) Use CTRL-A/CTRL-X to increment dates, times, and more.
 
 ### Do you are learn vim? helpful links!
 

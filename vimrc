@@ -23,6 +23,10 @@
 " Be IMproved.
 set nocompatible
 
+" sets how vim shall represent characters internally.
+" Utf-8 is necessary for most flavors of Unicode.
+set encoding=utf-8
+
 " Disable the welcome screen.
 set shortmess+=I
 
@@ -53,10 +57,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Disable swap files.
 set noswapfile
-
-" Which will place yanked text into the global clipboard, and allow you to
-" paste from the global clipboard.
-set clipboard=unannamedplus
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Visual settings
@@ -162,10 +162,22 @@ map <C-left> :execute "tabmove" tabpagenr() - 2 <cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ~>> Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Install Vundle if this isn't installed.
+let install_bundles=0
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+  echo "Installing Vundle.."
+  echo ""
+  silent !mkdir -p ~/.vim/bundle
+  silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  let install_bundles=1
+endif
+
 " Set the runtime path to include Vundle.
 set rtp+=~/.vim/bundle/Vundle.vim
 
-" Initialize Vundle plugin.
+" Initialize Vundle plugins list and its settings.
 call vundle#begin()
 
 " Let Vundle manage Vundle, required  by Vundle.
@@ -229,8 +241,22 @@ Plugin 'terryma/vim-multiple-cursors'
 " split window.
 Plugin 'mileszs/ack.vim'
 
-" All of your Plugins must be added before the following line. Required by Vundle.
+" Enable repeating supported plugin maps with ".":
+Plugin 'tpope/vim-repeat'
+
+" Use CTRL-A/CTRL-X to increment dates, times, and more.
+Plugin 'tpope/vim-speeddating'
+
+" All of your plugins must be added before the following line.
 call vundle#end()
+
+" All your other plugins.
+if install_bundles == 1
+  echo "Installing Bundles (ignore possible key map error messages)"
+  echo ""
+  :BundleInstall
+  :qa
+end
 
 " Because Vundle required filetype off.
 filetype plugin indent on
