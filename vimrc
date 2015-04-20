@@ -247,6 +247,9 @@ Plugin 'tpope/vim-repeat'
 " Use CTRL-A/CTRL-X to increment dates, times, and more.
 Plugin 'tpope/vim-speeddating'
 
+" Simple color selector/picker plugin for Vim.
+Plugin 'KabbAmine/vCoolor.vim'
+
 " All of your plugins must be added before the following line.
 call vundle#end()
 

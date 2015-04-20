@@ -32,6 +32,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [Ack](github.com/mileszs/ack.vim) This plugin will allow you to run ack from vim, and shows the results in a split window.
 - [Repeat](github.com/tpope/vim-repeat) Enable repeating supported plugin maps with ".".
 - [speeddating](github.com/tpope/vim-speeddating) Use CTRL-A/CTRL-X to increment dates, times, and more.
+- [vCoolor](github.com/tpope/KabbAmine/vCoolor) Simple color selector/picker plugin for Vim.
 
 ### Do you are learn vim? helpful links!
 
