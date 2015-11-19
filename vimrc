@@ -127,8 +127,9 @@ map <C-l> <C-W>l
 map <S-h> :tabp<cr>
 map <S-l> :tabn<cr>
 
-" Remap | to first non-blank character.
+" Remap | and ` to first non-blank character.
 map \| ^
+map ` ^
 
 " Fast search with <C-r> in visual mode.
 vnoremap <C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
@@ -156,7 +157,7 @@ nnoremap Y y$
 map <leader>r :so~/.vim/vimrc<CR>
 
 " Short way to move tabs :)
-map <C-right> :execute "tabmove" tabpagenr() <cr>
+map <C-right> :execute "tabmove" tabpagenr() + 1 <cr>
 map <C-left> :execute "tabmove" tabpagenr() - 2 <cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -260,6 +261,12 @@ if install_bundles == 1
   :BundleInstall
   :qa
 end
+
+" Change default behaviour of ctrl-p plugin when open a new file.
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<c-t>'],
+  \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+  \ }
 
 " Because Vundle required filetype off.
 filetype plugin indent on
